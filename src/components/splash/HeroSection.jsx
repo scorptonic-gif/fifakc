@@ -134,6 +134,9 @@ export default function HeroSection() {
           transition={{ delay: 2, type: "spring", stiffness: 200 }}
           className="mt-16"
         >
+          <p className="text-white text-sm font-body tracking-widest uppercase mb-4 drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+            Click below for more info:
+          </p>
           <a
             href="http://www.parlorkcmo.com"
             target="_blank"
@@ -146,8 +149,8 @@ export default function HeroSection() {
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </span>
           </a>
-          <p className="mt-4 font-display italic text-primary/70 text-sm tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
-            Tell them Doyle sent ya!
+          <p className="mt-4 font-display italic text-white text-sm tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+            Tell 'em Doyle sent ya!
           </p>
         </motion.div>
       </div>
