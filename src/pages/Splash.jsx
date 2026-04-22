@@ -13,9 +13,6 @@ export default function Splash() {
 
   return (
     <div className="min-h-screen bg-background text-foreground font-body overflow-x-hidden">
-      <h1 className="sr-only">
-        FIFA World Cup 2026 Kansas City — Watch Parties, Dining & Entertainment | FIFA-KC.com
-      </h1>
       <AnimatePresence>
         {loaded && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
