@@ -43,7 +43,7 @@ export default function WatchPartySection() {
           <p className="text-muted-foreground font-body max-w-2xl mx-auto mb-12 leading-relaxed">
             Kansas City hosts <strong className="text-foreground">6 FIFA World Cup 2026 matches</strong> at 
             GEHA Field at Arrowhead Stadium — including a quarterfinal. Watch every game with us 
-            across three floors of screens, world-class food, and electric atmosphere.
+            across two floors of screens, world-class food, and electric atmosphere.
           </p>
         </motion.div>
 

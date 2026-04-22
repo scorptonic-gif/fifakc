@@ -12,8 +12,8 @@ const highlights = [
   },
   {
     icon: Layers,
-    title: "Three Floors of Entertainment",
-    desc: "A lounge, library, den, rooftop garden patio, two incredible bars, and live music stages — every level delivers a new experience.",
+    title: "Two Floors of Entertainment",
+    desc: "A lounge, library, den, rooftop garden patio, two incredible bars, and a private rentable basement event space — every level delivers a new experience.",
   },
   {
     icon: Building2,
@@ -61,7 +61,7 @@ export default function HighlightsGrid() {
           >
             <img
               src={VENUE_IMG}
-              alt="Inside Parlor Kansas City — three floors of premium dining, craft cocktails, and entertainment spaces perfect for FIFA World Cup 2026 watch parties"
+              alt="Inside Parlor Kansas City — two floors of premium dining, craft cocktails, and entertainment spaces perfect for FIFA World Cup 2026 watch parties"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />

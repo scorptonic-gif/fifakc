@@ -49,8 +49,8 @@ export default function SEOFooter() {
               <ul className="space-y-1">
                 <li>🍽️ 7 global cuisine-themed restaurants</li>
                 <li>🍹 2 full-service craft cocktail bars</li>
-                <li>🎵 Live music on multiple stages</li>
-                <li>🏢 Three floors of entertainment</li>
+                <li>🎵 Private rentable basement event space</li>
+                <li>🏢 Two floors of entertainment</li>
                 <li>🌿 Rooftop garden patio</li>
                 <li>🎉 Private & semi-private event spaces</li>
               </ul>
@@ -135,8 +135,8 @@ export default function SEOFooter() {
             and 15 minutes from <strong className="text-foreground/70">Children's Mercy Park</strong> (home of Sporting Kansas City).
             Whether you're looking for a <strong className="text-foreground/70">FIFA World Cup 2026 watch party in Kansas City</strong>, the best restaurants near Arrowhead Stadium,
             private event spaces for corporate groups, or the ultimate fan experience —
-            cheer on <strong className="text-foreground/70">Argentina, Netherlands, Ecuador, Tunisia, Algeria, Austria, and Curaçao</strong> across three floors of entertainment,
-            7 global cuisine restaurants, live music, and craft cocktails. Kansas City is ready for the world — and so are we.
+            cheer on <strong className="text-foreground/70">Argentina, Netherlands, Ecuador, Tunisia, Algeria, Austria, and Curaçao</strong> across two floors of entertainment,
+            7 global cuisine restaurants, private rentable basement event space, and craft cocktails. Kansas City is ready for the world — and so are we.
           </p>
         </section>
 
