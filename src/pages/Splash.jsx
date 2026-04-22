@@ -21,7 +21,7 @@ export default function Splash() {
             <section className="bg-background px-6 py-12">
               <div className="max-w-2xl mx-auto">
                 <iframe
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSf6u2F4MqT1rAE5yHWStIQ-H9AEa2ceOvpnFvCT5-Vs7ebTDw/viewform?embedded=true"
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSceQ9vn99UimDamo3qTVviXLSz7JjD6_wwFtEq19vL5I9xWrA/viewform?embedded=true"
                   width="100%"
                   height="600"
                   frameBorder="0"
