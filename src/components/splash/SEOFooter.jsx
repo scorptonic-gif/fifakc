@@ -23,7 +23,7 @@ function SiteCounter() {
   const DISPLAY_W = TILE_W * (DISPLAY_H / TILE_H); // ~13.5px per digit
   const scale = DISPLAY_H / TILE_H;
 
-  const digits = String(count).padStart(6, "0").split("");
+  const digits = String(count).split("");
 
   return (
     <div className="mt-4 flex justify-center" style={{ opacity: 0.35 }}>
