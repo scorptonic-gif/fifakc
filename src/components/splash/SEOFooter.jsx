@@ -1,4 +1,50 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+function SiteCounter() {
+  const [count, setCount] = useState(null);
+
+  useEffect(() => {
+    // Get existing count from localStorage
+    const stored = parseInt(localStorage.getItem("fifa_kc_visits") || "0", 10);
+    // Increment on each new session (use sessionStorage to avoid counting refreshes)
+    const visited = sessionStorage.getItem("fifa_kc_session");
+    let newCount = stored;
+    if (!visited) {
+      newCount = stored + 1;
+      localStorage.setItem("fifa_kc_visits", newCount);
+      sessionStorage.setItem("fifa_kc_session", "1");
+    }
+    setCount(newCount);
+  }, []);
+
+  if (count === null) return null;
+
+  // Pad to 6 digits
+  const digits = String(count).padStart(6, "0").split("");
+
+  return (
+    <div className="mt-4 flex justify-center" style={{ opacity: 0.35 }}>
+      <div className="relative inline-flex items-center justify-center">
+        <img
+          src="/sitecounter.png"
+          alt="Site visitor counter"
+          className="h-10 object-contain"
+        />
+        <div className="absolute inset-0 flex items-center justify-center gap-px">
+          {digits.map((d, i) => (
+            <span
+              key={i}
+              className="font-headline text-foreground text-lg leading-none"
+              style={{ textShadow: "0 1px 3px rgba(0,0,0,0.8)" }}
+            >
+              {d}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function SEOFooter() {
   return (
@@ -145,6 +191,7 @@ export default function SEOFooter() {
           <p className="text-xs text-muted-foreground/40 font-body">
             © {new Date().getFullYear()} FIFA-KC.com · Kansas City, Missouri · FIFA World Cup 2026™ Fan Guide
           </p>
+          <SiteCounter />
         </div>
 
       </div>
