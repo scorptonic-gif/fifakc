@@ -149,9 +149,7 @@ export default function HeroSection() {
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </span>
           </a>
-          <p className="mt-4 font-display italic text-white text-sm tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
-            Tell 'em Doyle sent ya!
-          </p>
+
         </motion.div>
       </div>
     </section>
