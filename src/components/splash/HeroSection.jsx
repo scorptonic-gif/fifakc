@@ -63,7 +63,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.5 }}
           className="font-headline text-6xl sm:text-8xl md:text-9xl tracking-wide text-foreground leading-none mb-2 drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]"
         >
-          FIFA-KC
+          FIFA · KC
         </motion.h2>
 
         <motion.p
@@ -79,7 +79,7 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.9 }}
-          className="flex items-center justify-center gap-2 text-muted-foreground mb-10 drop-shadow-[0_1px_6px_rgba(0,0,0,0.9)]"
+          className="flex items-center justify-center gap-2 text-white mb-10 drop-shadow-[0_1px_6px_rgba(0,0,0,0.9)]"
         >
           <MapPin className="w-4 h-4" />
           <span className="text-sm font-body tracking-widest uppercase">
