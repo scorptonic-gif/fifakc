@@ -4,9 +4,7 @@ function SiteCounter() {
   const [count, setCount] = useState(null);
 
   useEffect(() => {
-    // Get existing count from localStorage
     const stored = parseInt(localStorage.getItem("fifa_kc_visits") || "0", 10);
-    // Increment on each new session (use sessionStorage to avoid counting refreshes)
     const visited = sessionStorage.getItem("fifa_kc_session");
     let newCount = stored;
     if (!visited) {
@@ -19,28 +17,35 @@ function SiteCounter() {
 
   if (count === null) return null;
 
-  // Pad to 6 digits
+  // Sprite sheet: 1504x314, 10 digits (0-9) in a single row
+  const TILE_W = 150.4;
+  const TILE_H = 314;
+  const DISPLAY_H = 28; // rendered height
+  const DISPLAY_W = TILE_W * (DISPLAY_H / TILE_H); // ~13.5px per digit
+  const scale = DISPLAY_H / TILE_H;
+
   const digits = String(count).padStart(6, "0").split("");
 
   return (
     <div className="mt-4 flex justify-center" style={{ opacity: 0.35 }}>
-      <div className="relative inline-flex items-center justify-center">
-        <img
-          src="/sitecounter.png"
-          alt="Site visitor counter"
-          className="h-10 object-contain"
-        />
-        <div className="absolute inset-0 flex items-center justify-center gap-px">
-          {digits.map((d, i) => (
-            <span
+      <div className="flex items-center gap-0">
+        {digits.map((d, i) => {
+          const digit = parseInt(d, 10);
+          return (
+            <div
               key={i}
-              className="font-headline text-foreground text-lg leading-none"
-              style={{ textShadow: "0 1px 3px rgba(0,0,0,0.8)" }}
-            >
-              {d}
-            </span>
-          ))}
-        </div>
+              style={{
+                width: `${DISPLAY_W}px`,
+                height: `${DISPLAY_H}px`,
+                backgroundImage: "url('/sitecounter.png')",
+                backgroundSize: `${1504 * scale}px ${DISPLAY_H}px`,
+                backgroundPosition: `-${digit * TILE_W * scale}px 0px`,
+                backgroundRepeat: "no-repeat",
+                imageRendering: "crisp-edges",
+              }}
+            />
+          );
+        })}
       </div>
     </div>
   );
