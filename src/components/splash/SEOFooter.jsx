@@ -4,15 +4,14 @@ function SiteCounter() {
   const [count, setCount] = useState(null);
 
   useEffect(() => {
-    const stored = parseInt(localStorage.getItem("fifa_kc_visits") || "0", 10);
     const visited = sessionStorage.getItem("fifa_kc_session");
-    let newCount = stored;
-    if (!visited) {
-      newCount = stored + 1;
-      localStorage.setItem("fifa_kc_visits", newCount);
-      sessionStorage.setItem("fifa_kc_session", "1");
-    }
-    setCount(newCount);
+    const method = visited ? 'GET' : 'POST';
+    if (!visited) sessionStorage.setItem("fifa_kc_session", "1");
+
+    fetch('/api/counter', { method })
+      .then(r => r.json())
+      .then(data => setCount(data.count))
+      .catch(() => setCount(null));
   }, []);
 
   if (count === null) return null;
