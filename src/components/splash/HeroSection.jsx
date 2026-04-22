@@ -142,7 +142,7 @@ export default function HeroSection() {
           >
             <span className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <span className="relative flex items-center gap-3">
-              Enter our Crossroads Parlor
+              Enter our Crossroads KC Parlor
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </span>
           </a>
