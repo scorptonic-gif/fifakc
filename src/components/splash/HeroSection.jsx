@@ -63,11 +63,16 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.3 }}
           className="mb-6"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/40 bg-background/60 backdrop-blur-md mb-8">
-            <Trophy className="w-4 h-4 text-primary" />
-            <span className="text-sm font-body text-primary tracking-wider uppercase">
-              FIFA World Cup 2026™ Host City
-            </span>
+          <div className="inline-flex flex-col items-center gap-2 mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/40 bg-background/60 backdrop-blur-md">
+              <Trophy className="w-4 h-4 text-primary" />
+              <span className="text-sm font-body text-primary tracking-wider uppercase">
+                FIFA World Cup 2026™ Host City
+              </span>
+            </div>
+            <p className="text-xs text-white/50 font-body italic">
+              Independent fan guide — not affiliated with FIFA or the Fédération Internationale de Football Association
+            </p>
           </div>
         </motion.h1>
 
