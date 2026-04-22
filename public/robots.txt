@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fifa-kc.com/sitemap.xml
