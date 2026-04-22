@@ -63,8 +63,35 @@ export default function SEOFooter() {
                 <li>🏆 All 6 KC matches on every screen</li>
                 <li>👥 Group & corporate bookings available</li>
                 <li>🍺 Draft beer & craft cocktails</li>
-                <li>📍 Minutes from Arrowhead Stadium</li>
+                <li>📍 1707 Locust St, Downtown Kansas City</li>
               </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Stadium Proximity */}
+        <section aria-label="Distance from Kansas City soccer stadiums" className="mb-12">
+          <h2 className="font-headline text-xl text-foreground tracking-wide mb-4 text-center">
+            Centrally Located — Near Every Kansas City Soccer Venue
+          </h2>
+          <div className="grid sm:grid-cols-3 gap-4 max-w-3xl mx-auto text-sm font-body text-center">
+            <div className="p-4 rounded-xl bg-card border border-border">
+              <div className="text-2xl mb-2">🏟️</div>
+              <div className="font-headline text-base text-primary tracking-wide mb-1">~2 Miles</div>
+              <div className="text-foreground font-semibold mb-1">CPKC Stadium</div>
+              <div className="text-muted-foreground text-xs">Home of KC Current · Berkley Riverfront</div>
+            </div>
+            <div className="p-4 rounded-xl bg-card border border-primary/40">
+              <div className="text-2xl mb-2">⚽</div>
+              <div className="font-headline text-base text-primary tracking-wide mb-1">~20 Min</div>
+              <div className="text-foreground font-semibold mb-1">GEHA Field at Arrowhead</div>
+              <div className="text-muted-foreground text-xs">FIFA World Cup 2026 · 76,000 fans</div>
+            </div>
+            <div className="p-4 rounded-xl bg-card border border-border">
+              <div className="text-2xl mb-2">🏆</div>
+              <div className="font-headline text-base text-primary tracking-wide mb-1">~15 Min</div>
+              <div className="text-foreground font-semibold mb-1">Children's Mercy Park</div>
+              <div className="text-muted-foreground text-xs">Home of Sporting KC · Village West</div>
             </div>
           </div>
         </section>
@@ -102,9 +129,13 @@ export default function SEOFooter() {
         <section aria-label="About FIFA KC 2026" className="mb-10 max-w-3xl mx-auto">
           <p className="text-xs text-muted-foreground font-body leading-relaxed text-center">
             FIFA-KC.com is Kansas City's premier guide to the <strong className="text-foreground/70">FIFA World Cup 2026™</strong> experience in Kansas City, Missouri.
-            Whether you're looking for a <strong className="text-foreground/70">FIFA World Cup 2026 watch party in Kansas City</strong>, the best restaurants near GEHA Field at Arrowhead Stadium,
-            private event spaces for corporate groups, or the ultimate fan experience — Parlor KCMO is your Kansas City World Cup headquarters.
-            Cheer on <strong className="text-foreground/70">Argentina, Netherlands, Ecuador, Tunisia, Algeria, Austria, and Curaçao</strong> across three floors of entertainment,
+            Located at <strong className="text-foreground/70">1707 Locust St in downtown Kansas City</strong>, Parlor KCMO is your World Cup headquarters —
+            just minutes from <strong className="text-foreground/70">CPKC Stadium</strong> (home of the KC Current),
+            20 minutes from <strong className="text-foreground/70">GEHA Field at Arrowhead Stadium</strong> (the FIFA World Cup 2026 venue),
+            and 15 minutes from <strong className="text-foreground/70">Children's Mercy Park</strong> (home of Sporting Kansas City).
+            Whether you're looking for a <strong className="text-foreground/70">FIFA World Cup 2026 watch party in Kansas City</strong>, the best restaurants near Arrowhead Stadium,
+            private event spaces for corporate groups, or the ultimate fan experience —
+            cheer on <strong className="text-foreground/70">Argentina, Netherlands, Ecuador, Tunisia, Algeria, Austria, and Curaçao</strong> across three floors of entertainment,
             7 global cuisine restaurants, live music, and craft cocktails. Kansas City is ready for the world — and so are we.
           </p>
         </section>
