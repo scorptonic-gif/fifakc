@@ -196,6 +196,17 @@ export default function SEOFooter() {
             © {new Date().getFullYear()} FIFA-KC.com · Kansas City, Missouri · FIFA World Cup 2026™ Fan Guide
           </p>
           <SiteCounter />
+          <p className="mt-3 text-xs text-muted-foreground/40 font-body">
+            Site Created by:{" "}
+            <a
+              href="http://www.facebook.com/scorptonic"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary/60 transition-colors"
+            >
+              ScorpTonic
+            </a>
+          </p>
         </div>
 
       </div>
