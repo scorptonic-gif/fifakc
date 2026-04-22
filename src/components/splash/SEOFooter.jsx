@@ -106,15 +106,14 @@ export default function SEOFooter() {
               </ul>
             </div>
             <div>
-              <h3 className="font-headline text-base text-foreground tracking-wide mb-2">World Cup Watch Party Features</h3>
-              <ul className="space-y-1">
-                <li>📺 Big screens on every floor</li>
-                <li>🌍 7 global cuisine options</li>
-                <li>🏆 All 6 KC matches on every screen</li>
-                <li>👥 Group & corporate bookings available</li>
-                <li>🍺 Draft beer & craft cocktails</li>
-                <li>📍 1707 Locust St, Downtown Kansas City</li>
-              </ul>
+              <h3 className="font-headline text-base text-foreground tracking-wide mb-2">In-House Catering</h3>
+              <p className="text-muted-foreground font-body text-sm leading-relaxed">
+                Planning a watch party or private event? Parlor KCMO offers full in-house catering 
+                sourced directly from any of our 7 on-site restaurants. Whether you're craving 
+                Indian fusion, elevated Tex-Mex, Mediterranean spreads, or anything in between — 
+                our culinary teams will bring the flavors of the world straight to your table. 
+                Perfect for corporate groups, fan meetups, and FIFA World Cup 2026 celebrations of any size.
+              </p>
             </div>
           </div>
         </section>
