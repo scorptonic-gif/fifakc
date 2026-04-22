@@ -202,7 +202,7 @@ export default function SEOFooter() {
               href="http://www.facebook.com/scorptonic"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-primary/60 transition-colors"
+              className="text-orange-400 underline hover:text-cyan-400 transition-colors"
             >
               ScorpTonic
             </a>
