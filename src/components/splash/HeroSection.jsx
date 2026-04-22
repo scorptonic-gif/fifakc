@@ -21,23 +21,37 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
       </div>
 
-      {/* Floating Particles */}
+      {/* Floating Soccer Balls */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(6)].map((_, i) => (
+        {[
+          { left: "8%",  top: "15%", duration: 5, delay: 0 },
+          { left: "20%", top: "60%", duration: 7, delay: 1 },
+          { left: "35%", top: "25%", duration: 6, delay: 2 },
+          { left: "50%", top: "70%", duration: 8, delay: 0.5 },
+          { left: "65%", top: "20%", duration: 5, delay: 1.5 },
+          { left: "78%", top: "55%", duration: 7, delay: 3 },
+          { left: "88%", top: "35%", duration: 6, delay: 0.8 },
+          { left: "42%", top: "45%", duration: 9, delay: 2.5 },
+          { left: "92%", top: "75%", duration: 5, delay: 1.2 },
+        ].map((ball, i) => (
           <motion.div
             key={i}
-            className="absolute w-1 h-1 bg-primary rounded-full opacity-40"
-            style={{ left: `${15 + i * 15}%`, top: `${20 + (i % 3) * 25}%` }}
+            className="absolute text-2xl"
+            style={{ left: ball.left, top: ball.top }}
             animate={{
-              y: [-20, 20, -20],
-              opacity: [0.2, 0.6, 0.2],
+              y: [-25, 25, -25],
+              rotate: [0, 360],
+              opacity: [0.25, 0.55, 0.25],
             }}
             transition={{
-              duration: 4 + i,
+              duration: ball.duration,
               repeat: Infinity,
-              delay: i * 0.5,
+              delay: ball.delay,
+              ease: "easeInOut",
             }}
-          />
+          >
+            ⚽
+          </motion.div>
         ))}
       </div>
 
