@@ -2,12 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const MATCHES = [
-  { date: "June 16", teams: "Argentina vs. Algeria", group: "Group A" },
-  { date: "June 20", teams: "Ecuador vs. Curaçao", group: "Group B" },
-  { date: "June 25", teams: "Tunisia vs. Netherlands", group: "Group C" },
-  { date: "June 27", teams: "Algeria vs. Austria", group: "Group A" },
-  { date: "TBD", teams: "Round of 32", group: "Knockout" },
-  { date: "TBD", teams: "Quarterfinal", group: "Knockout" },
+  { date: "June 16", time: "8:00 PM CT", teams: "Argentina vs. Algeria", group: "Group J" },
+  { date: "June 20", time: "7:00 PM CT", teams: "Ecuador vs. Curaçao", group: "Group E" },
+  { date: "June 25", time: "6:00 PM CT", teams: "Tunisia vs. Netherlands", group: "Group F" },
+  { date: "June 27", time: "9:00 PM CT", teams: "Algeria vs. Austria", group: "Group J" },
+  { date: "July 3",  time: "8:30 PM CT", teams: "Round of 32", group: "Knockout" },
+  { date: "July 11", time: "8:00 PM CT", teams: "Quarterfinal", group: "Knockout" },
 ];
 
 export default function MatchTicker() {
@@ -24,6 +24,9 @@ export default function MatchTicker() {
           >
             <div className="text-xs font-body uppercase tracking-widest text-muted-foreground">
               {match.date}
+            </div>
+            <div className="text-xs font-body text-muted-foreground/60">
+              {match.time}
             </div>
             <div className="font-headline text-lg sm:text-xl text-foreground tracking-wide">
               {match.teams}

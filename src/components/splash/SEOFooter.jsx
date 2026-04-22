@@ -20,12 +20,12 @@ export default function SEOFooter() {
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-3xl mx-auto">
             {[
-              { flag1: "🇦🇷", flag2: "🇩🇿", match: "Argentina vs. Algeria", date: "June 16, 2026", group: "Group A" },
-              { flag1: "🇪🇨", flag2: "🇨🇼", match: "Ecuador vs. Curaçao", date: "June 20, 2026", group: "Group B" },
-              { flag1: "🇹🇳", flag2: "🇳🇱", match: "Tunisia vs. Netherlands", date: "June 25, 2026", group: "Group C" },
-              { flag1: "🇩🇿", flag2: "🇦🇹", match: "Algeria vs. Austria", date: "June 27, 2026", group: "Group A" },
-              { flag1: "⚽", flag2: "🏆", match: "Round of 32", date: "TBD", group: "Knockout Stage" },
-              { flag1: "🏆", flag2: "🌟", match: "Quarterfinal", date: "TBD", group: "Knockout Stage" },
+              { flag1: "🇦🇷", flag2: "🇩🇿", match: "Argentina vs. Algeria", date: "June 16, 2026 · 8:00 PM CT", group: "Group J" },
+              { flag1: "🇪🇨", flag2: "🇨🇼", match: "Ecuador vs. Curaçao", date: "June 20, 2026 · 7:00 PM CT", group: "Group E" },
+              { flag1: "🇹🇳", flag2: "🇳🇱", match: "Tunisia vs. Netherlands", date: "June 25, 2026 · 6:00 PM CT", group: "Group F" },
+              { flag1: "🇩🇿", flag2: "🇦🇹", match: "Algeria vs. Austria", date: "June 27, 2026 · 9:00 PM CT", group: "Group J" },
+              { flag1: "⚽", flag2: "🏆", match: "Round of 32", date: "July 3, 2026 · 8:30 PM CT", group: "Knockout Stage" },
+              { flag1: "🏆", flag2: "🌟", match: "Quarterfinal", date: "July 11, 2026 · 8:00 PM CT", group: "Knockout Stage" },
             ].map((g) => (
               <div key={g.match} className="p-3 rounded-lg bg-card border border-border text-sm">
                 <div className="text-xs text-primary font-body uppercase tracking-widest mb-1">{g.date} · {g.group}</div>
@@ -108,7 +108,7 @@ export default function SEOFooter() {
             </div>
             <div>
               <h3 className="text-foreground font-semibold mb-1">Which World Cup 2026 matches are in Kansas City?</h3>
-              <p className="text-muted-foreground leading-relaxed">Kansas City hosts 6 FIFA World Cup 2026 matches at GEHA Field at Arrowhead Stadium — Argentina vs. Algeria (June 16), Ecuador vs. Curaçao (June 20), Tunisia vs. Netherlands (June 25), Algeria vs. Austria (June 27), plus a Round of 32 and a Quarterfinal match.</p>
+              <p className="text-muted-foreground leading-relaxed">Kansas City hosts 6 FIFA World Cup 2026 matches at GEHA Field at Arrowhead Stadium — Argentina vs. Algeria (June 16, 8pm CT), Ecuador vs. Curaçao (June 20, 7pm CT), Tunisia vs. Netherlands (June 25, 6pm CT), Algeria vs. Austria (June 27, 9pm CT), Round of 32 (July 3, 8:30pm CT), and a Quarterfinal (July 11, 8pm CT).</p>
             </div>
             <div>
               <h3 className="text-foreground font-semibold mb-1">What is the FIFA World Cup 2026 stadium in Kansas City?</h3>
