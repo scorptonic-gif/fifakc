@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import HeroSection from "../components/splash/HeroSection";
 import MatchTicker from "../components/splash/MatchTicker";
+import NewsTicker from "../components/splash/NewsTicker";
 import SEOFooter from "../components/splash/SEOFooter";
 
 export default function Splash() {
@@ -18,6 +19,7 @@ export default function Splash() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }}>
             <HeroSection />
             <MatchTicker />
+            <NewsTicker />
             <section className="bg-background px-6 py-12">
               <div className="max-w-2xl mx-auto">
                 <iframe
